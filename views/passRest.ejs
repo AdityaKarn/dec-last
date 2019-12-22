@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" />
+<link href="../public/style/home-styles.css" rel="stylesheet">
+<div class="form-gap" style="padding-top: 70px;"></div>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #232323;
+    border-radius: 20px;
+
+    margin-bottom: 2rem;
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #0e0e11;
+
+    color: white;
+    min-height: 100vh;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    color: white;
+    background-color: #1762a7;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+  }
+
+  .btn:hover {
+    background-color: #2180d8;
+  }
+
+  .btn:focus {
+    background-color: #2796ff;
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+</style>
+
+<div class="form-gap" style="padding-top: 70px;"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="text-center">
+            <h3><i class="fa fa-lock fa-4x"></i></h3>
+            <h2 class="text-center">Forgot Password?</h2>
+            <p>You can reset your password here.</p>
+            <div style="padding: 10px;">
+              <% include ./partials/messages %>
+            </div>
+            <div class="panel-body">
+              <form id="register-form" role="form" autocomplete="off" class="form" method="POST">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                    <input id="email" name="email" placeholder="Email address" spellcheck="false" class="form-control"
+                      type="email" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password"
+                    type="submit" />
+                </div>
+
+                <input type="hidden" class="hide" name="token" id="token" value="" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

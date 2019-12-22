@@ -1,0 +1,276 @@
+﻿<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132412908-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132412908-1');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>UNRAVEL-The Case Study</title>
+    <link rel="shortcut icon" href="images/ecell.png" type="image/x-icon">
+    <link rel="icon" href="images/ecell.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel='stylesheet' id='foundation-css-css' href='css/foundation.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='site-css-css' href='css/app.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-css-css' href='css/custom.css' type='text/css' media='all' />
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff;">
+        <div class="row">
+            <div class="col s9 m9">
+                <h2 style="color: rgb(212, 182, 12); margin-left: 5%;">Registration Form</h2>
+            </div>
+            <div class="col s3 m3">
+                <a href="index.html"> <h2 style="color: rgb(212, 182, 12); margin-right: 1%; text-align: right;" ><i class="material-icons prefix">home</i></h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <main class="hide1 ">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h5></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6" id="adjust-vertical-alignment">
+                    <div class="left-align" id="location">
+                        <h2>UNRAVEL-The Case Study</h2>
+                        <h6>The Entrepreneurship cell, NSUT is back with their mind-boggling, national level case study competition ' Unravel ' under its annual event Esummit'19. The competition is open to all undergraduate and post-graduate students, from all fields, all over India. Participate in teams of minimum two participants and win cash prizes and goodies worth a swooping 20,000 So people its time to put on your thinking caps and bewilder everyone with your wits and logic.<br> <b>Form deadline:22 January 2019</b></h6>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" id="guildford">
+                        <div class="card-image">
+                            <img src="images/nsut.jpg" alt="Harbour Hotel Guildford">
+                            <span class="card-title">Netaji Subhas University of Technology</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Committee Room</p>
+                            <p>9th Februrary 2019</p>
+                            <p>10AM-2PM</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.google.com/maps/place/Netaji+Subhas+University+Of+Technology/@28.6094569,77.0374067,17z/data=!4m8!1m2!2m1!1snsut!3m4!1s0x390d05dd375e5a13:0x108adaa3abe4bd07!8m2!3d28.6102353!4d77.0378947" target="_blank">GO TO MAP (new window)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 10px">
+                <button onclick="showForm()" id="btn" class="btn">Register Now !</button>
+            </div>
+        </div>
+        <div class="container hidden" id="form">
+            <form name="form1" class="gform" id="myForm" method="GET" action="https://script.google.com/macros/s/AKfycbwZNQ6bCOdspBy69GufGhZQbPmCveh6wtft3eWc8-ua8GVVhWk/exec">
+                <!--  two main columns  -->
+                <div class="form-elements">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">people</i>
+                            <input type="text" name="Tname" value="" class="validate" required>
+                            <label>Team name<span class="red-text text-accent-4">*</span></label>
+                        </div>
+                    </div>
+                    <h4>Participant 1</h4>
+                    <div class="row">
+                        <div class="input-field col s12 m2">
+                            <i class="material-icons prefix">account_box</i>
+                            <label>Title <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Sname" value="" required class="validate">
+                        </div>
+                        <div class="input-field col s12 m5">
+                            <!-- <i class="material-icons prefix">account_box</i> -->
+                            <label>First name <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Fname" value="" required class="validate">
+                        </div>
+                        <div class="input-field col s12 m5">
+                            <!-- <i class="material-icons prefix">account_box</i> -->
+                            <label>Last name <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Lname" value="" required class="validate">
+                        </div>
+                    </div>
+                    <!-- first column end -->
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">email</i>
+                            <label>Email <span  class="red-text text-accent-4">*</span></label>
+                            <input type="email" name="email" value="" required class="validate">
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">phone_android</i>
+                            <label>Phone <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Phone" value="" class="validate" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">school</i>
+                            <input type="text" name="Cname" value="" class="validate" required>
+                            <label>College name<span class="red-text text-accent-4">*</span></label>
+                        </div>
+                    </div>
+                    <h4>Participant 2</h4>
+                    <div class="row">
+                        <div class="input-field col s12 m2">
+                            <i class="material-icons prefix">account_box</i>
+                            <label>Title <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Sname1" value="" required class="validate">
+                        </div>
+                        <div class="input-field col s12 m5">
+                            <!-- <i class="material-icons prefix">account_box</i> -->
+                            <label>First name <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Fname1" value="" required class="validate">
+                        </div>
+                        <div class="input-field col s12 m5">
+                            <!-- <i class="material-icons prefix">account_box</i> -->
+                            <label>Last name <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Lname1" value="" required class="validate">
+                        </div>
+                    </div>
+                    <!-- first column end -->
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">email</i>
+                            <label>Email <span  class="red-text text-accent-4">*</span></label>
+                            <input type="email" name="email1" value="" required class="validate">
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">phone_android</i>
+                            <label>Phone <span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Phone1" value="" class="validate" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">school</i>
+                            <input type="text" name="Cname1" value="" class="validate" required>
+                            <label>College name<span class="red-text text-accent-4">*</span></label>
+                        </div>
+                    </div>
+                    <h4>Participant 3</h4>
+                    <div class="row">
+                        <div class="input-field col s12 m2">
+                            <i class="material-icons prefix">account_box</i>
+                            <label>Title </label>
+                            <input type="text" name="Sname2" value="" class="validate">
+                        </div>
+                        <div class="input-field col s12 m5">
+                            <!-- <i class="material-icons prefix">account_box</i> -->
+                            <label>First name</label>
+                            <input type="text" name="Fname2" value="" class="validate">
+                        </div>
+                        <div class="input-field col s12 m5">
+                            <!-- <i class="material-icons prefix">account_box</i> -->
+                            <label>Last name</label>
+                            <input type="text" name="Lname2" value="" class="validate">
+                        </div>
+                    </div>
+                    <!-- first column end -->
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">email</i>
+                            <label>Email</label>
+                            <input type="email" name="email2" value="" class="validate">
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix">phone_android</i>
+                            <label>Phone</label>
+                            <input type="text" name="Phone2" value="" class="validate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">school</i>
+                            <input type="text" name="Cname2" value="" class="validate">
+                            <label>College name</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <i class="material-icons prefix">transfer_within_a_station</i>
+                        <!-- <label>What is your business channel?<span class="red-text text-accent-4">*</span></label>
+                            <input type="text" name="Bchannel" value="" class="validate" style="padding-top: 30px" required>
+                                 -->
+                        <label>Slots<span class="red-text text-accent-4">*</span></label>
+                        <input id="datalist" type="text" list="progLang1" style="width: auto;" name="Slots" value="" class="validate" required />
+                        <datalist id="progLang1">
+                            <option value="25 January (6PM-9PM)" />
+                            <option value="26 January (3PM-6PM)" />
+                            <option value="26 January (6PM-9PM)" />
+                        </datalist>
+                    </div>
+                    <!--  second main column start -->
+                    <!--  two main columns end  -->
+                    <button class="btn waves-effect waves-light red btn-large center-align" type="submit" style="font-size: 20px; margin-left: 55%; margin-bottom:5%; margin-right:2%">submit
+                    </button>
+                </div>
+                <div class="thankyou_message" style="display:none;">
+                    <h2><em>Thanks</em> for Registration!
+        We will get back to you soon!</h2>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div id="next" class="thankyou_message" style="display:none;">
+        <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+    </div>
+    <!--  JQuery, Materialize, Own scripts  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-logo">
+                        <img height="56" width="125" src="images/esumm-logo-bckless.png" alt="footer logo" />
+</div>
+                        <div id="contact-social" class="footer-social">
+                            <ul>
+                                <li><a href="https://www.facebook.com/ecell.nsit/"><i class="fa fa-facebook btn2"></i></a></li>
+                                <li><a href="https://in.linkedin.com/company/ecell-nsit-the-entrepreneurship-cell-of-nsit-"><i class="fa fa-linkedin btn2"></i></a></li>
+                                <li><a href="https://www.instagram.com/ecell.nsut/"><i class="fa fa-instagram btn2"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright-info">
+                            <span>Copyright © 2019 ECell NSUT. All Rights Reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script type="text/javascript">
+    function showForm() {
+        document.getElementById("form").classList.remove('hidden');
+        document.getElementById("btn").classList.add('hidden');
+    }
+    </script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jCounter.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+</body>
+
+</html>

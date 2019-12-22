@@ -1,0 +1,288 @@
+<link rel="stylesheet" href="../public/style/home-styles.css" />
+<link rel="stylesheet" href="../public/style/profile-styles.css" />
+
+<style>
+  /* Nav Bar */
+  .nav {
+    height: 80px;
+    width: 100% !important;
+    background-color: #0e0e11;
+    padding-top: 20px ;
+
+  }
+
+  .nav>.nav-header {
+    display: inline;
+  }
+
+  .nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    
+    padding: 10px 10px 10px 10px;
+  }
+
+  .nav>.nav-btn {
+    display: none;
+  }
+
+  .nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+
+  .nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav>.nav-links>a:hover {
+    background-color: #232323;
+  }
+
+  .nav>#nav-check {
+    display: none;
+  }
+
+  /* Nav Bar media Queries */
+
+  @media (max-width:680px) {
+    .nav>.nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid white;
+    }
+
+    .nav>.nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #232323;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 80px;
+      left: 0px;
+    }
+
+    .nav>.nav-links>a {
+      display: block;
+      width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+      height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+</style>
+
+<style>
+  .task-card{
+   display:block;
+   width:100%;
+   height: 300px;
+   overflow:hidden;
+   } 
+</style>
+
+<div class="container full-height-grow">
+
+  <div class="nav">
+
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a class="brand-logo">
+          <img src="../public/assets/Ecell-LOGO-01.png" />
+          <div class="brand-logo-name">DEC</div>
+        </a>
+      </div>
+    </div>
+    <div class="nav-btn" style="padding-top: 25px;">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="/users/homeboard">Home</a>
+      <a href="#">Dashboard</a>
+      <a href="/users/logout">Logout</a>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+  <div class="profile-section">
+    <div class="profile-title-container">
+      <h1 class="profile-title">
+        Your <span class="accent-text-stroke">Profile</span>
+      </h1>
+    </div>
+    <% include ./partials/messages %>
+    <div class="profile-info-container">
+      <h3 class="leader-name coves-font">Leader Name: <%= name %></h3>
+    </div>
+    <div class="profile-info-container">
+      <h3 class="team-name coves-font">Team Name: <%= teamname %> </h3>
+    </div>
+    <div class="profile-info-container">
+      <h3 class="coves-font">Points:</h3>
+      <h3 class="user-points coves-font box-border">Will Be Updated!<%= score %></h3>
+    </div>
+    <div class="user-main-info">
+      <div class="profile-info-container">
+        <h3 class="coves-font">Email:</h3>
+        <h3 class="user-email coves-font box-border"><%= email %></h3>
+      </div>
+      <div class="profile-info-container">
+        <h3 class="coves-font">Phone:</h3>
+        <h3 class="user-phone coves-font box-border"><%= number %></h3>
+      </div>
+      <div class="profile-info-container">
+        <h3 class="coves-font">College:</h3>
+        <h3 class="user-college coves-font box-border"><%= college %></h3>
+      </div>
+      <div class="profile-info-container">
+        <h3 class="coves-font">Address</h3>
+        <h3 class="user-address coves-font box-border"><%= address %></h3>
+      </div>
+
+    </div>
+    <div class="input-group">
+      <button type="submit" class="btn"><a style="color: inherit; text-decoration: none;" href="/users/editprofile">Edit
+          Profile</a></button>
+    </div>
+
+    <div class="tasks-container" style="text-align: center;">
+      <div class="tasks-title-container">
+        <h1 class="tasks-title">
+          Your <span class="accent-text-stroke">Tasks</span>
+        </h1>
+      </div>
+      <div class="task-card-container" style="text-align: center; align-content: center;">
+        <div class="task-card box-border">
+          <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">&nbsp;1</span></h3>
+          <p class="task-brief coves-font">
+            Entrepreneurship facilities by govt.
+          </p>
+          <div class="input-group">
+            <button class="btn know-more"><a style="text-decoration: none; color: inherit;"
+                href="/users/dashboard/tasks/1">View Details</a></button>
+          </div>
+        </div>
+        <div class="task-card box-border">
+          <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">&nbsp;2</span></h3>
+          <p class="task-brief coves-font">
+            User's feedback.
+          </p>
+          <div class="input-group">
+            <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/2"
+                style="text-decoration: none; color: inherit;">View Details</a></button>
+          </div>
+        </div>
+        <div class="task-card box-border">
+          <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">&nbsp;3</span></h3>
+          <p class="task-brief coves-font">Establishing society plan or calendar for the year.</p>
+          <div class="input-group">
+            <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/3"
+                style="text-decoration: none; color: inherit;">View Details</a></button>
+          </div>
+        </div>
+
+        <%if (false) {%>
+        <div>
+          <div class="task-card box-border">
+            <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">4</span></h3>
+            <p class="task-brief coves-font">SOCH</p>
+            <div class="input-group">
+              <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/4"
+                  style="text-decoration: none; color: inherit;">View Details</a></button>
+            </div>
+          </div>
+          <div class="task-card box-border">
+            <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">4</span></h3>
+            <p class="task-brief coves-font">SOCH</p>
+            <div class="input-group">
+              <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/4"
+                  style="text-decoration: none; color: inherit;">View Details</a></button>
+            </div>
+          </div>
+          <div class="task-card box-border">
+            <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">4</span></h3>
+            <p class="task-brief coves-font">SOCH</p>
+            <div class="input-group">
+              <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/4"
+                  style="text-decoration: none; color: inherit;">View Details</a></button>
+            </div>
+          </div>
+          <div class="task-card box-border">
+            <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">4</span></h3>
+            <p class="task-brief coves-font">SOCH</p>
+            <div class="input-group">
+              <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/4"
+                  style="text-decoration: none; color: inherit;">View Details</a></button>
+            </div>
+          </div>
+          <div class="task-card box-border">
+            <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">4</span></h3>
+            <p class="task-brief coves-font">SOCH</p>
+            <div class="input-group">
+              <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/4"
+                  style="text-decoration: none; color: inherit;">View Details</a></button>
+            </div>
+          </div>
+          <div class="task-card box-border">
+            <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">4</span></h3>
+            <p class="task-brief coves-font">SOCH</p>
+            <div class="input-group">
+              <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/4"
+                  style="text-decoration: none; color: inherit;">View Details</a></button>
+            </div>
+          </div>
+          <div class="task-card box-border">
+            <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">4</span></h3>
+            <p class="task-brief coves-font">SOCH</p>
+            <div class="input-group">
+              <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/4"
+                  style="text-decoration: none; color: inherit;">View Details</a></button>
+            </div>
+          </div>
+        </div>
+        <%}%>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ 

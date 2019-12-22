@@ -1,0 +1,422 @@
+<link rel="stylesheet" href="../public/style/home-styles.css" />
+<link rel="stylesheet" href="../public/style/timeline-styles.css">
+
+<style>
+   .task-card{
+    display:block;
+    width:100%;
+    height: 300px;
+    overflow:hidden;
+    } 
+</style>
+
+
+<style>
+    /* Nav Bar */
+    .nav {
+      height: 80px;
+      width: 100% !important;
+      background-color: #0e0e11;
+      padding-top: 20px ;
+  
+    }
+  
+    .nav>.nav-header {
+      display: inline;
+    }
+  
+    .nav>.nav-header>.nav-title {
+      display: inline-block;
+      font-size: 22px;
+      
+      padding: 10px 10px 10px 10px;
+    }
+  
+    .nav>.nav-btn {
+      display: none;
+    }
+  
+    .nav>.nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+    }
+  
+    .nav>.nav-links>a {
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: white;
+    }
+  
+    .nav>.nav-links>a:hover {
+      background-color: #232323;
+    }
+  
+    .nav>#nav-check {
+      display: none;
+    }
+  
+    /* Nav Bar media Queries */
+  
+    @media (max-width:680px) {
+      .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+  
+      .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+  
+      .nav>.nav-btn>label:hover,
+      .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+  
+      .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid white;
+      }
+  
+      .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #232323;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        left: 0px;
+      }
+  
+      .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+      }
+  
+      .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+      }
+  
+      .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+    }
+  </style>
+  
+
+<div class="container full-height-grow">
+    <div class="nav">
+
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a class="brand-logo">
+              <img src="../public/assets/Ecell-LOGO-01.png" />
+              <div class="brand-logo-name">DEC</div>
+            </a>
+          </div>
+        </div>
+        <div class="nav-btn" style="padding-top: 25px;">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+    
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="/users/dashboard">Dashboard</a>
+          <a href="/users/logout">Logout</a>
+        </div>
+      </div>
+    <br>
+    <br>
+    <br>
+    <div class="dec-title-container">
+        <h1 class="dec-title">
+            <span class="accent-text-stroke">DEC'20</span> is here!
+        </h1>
+    </div>
+    <div class="dec-info-container">
+        <h2 style="margin-bottom: 1em;">
+            What is
+            <span class="accent-text-stroke">DEC?</span>
+        </h2>
+        <div class="para-1-2">
+            <div class="para-1">
+                <p class="dec-info para-1 coves-font">
+                    An entrepreneur's mind is in the perpetual grind to achieve the
+                    most innovative yet simple and creative solution to even the most
+                    exhausting issues out there. Each entrepreneur goes through an
+                    arduous journey in order to achieve the resilient mindset and the
+                    acumen required in the real world.<span class="bold-text">
+                        The Entrepreneurship Cell, NSUT</span>
+                    aims to promote this very notion by preparing budding
+                    entrepreneurs and giving them a head start through our annual
+                    affair, popularly known as DEC- Delhi Entrepreneurship Challenge.
+                </p>
+            </div>
+            <div class="para-2">
+                <p class="dec-info para-2 coves-font">
+                    DEC, the brainchild of ECell NSUT, offers the ground for
+                    likeminded enthusiasts to indulge in regular skill enhancing
+                    activities including group discussions, case studies, etc. to
+                    elucidate the dislimn of horrors of commencing something different
+                    and ingenious. We believe that entrepreneurship isn't convoluted,
+                    the only stipulation is to embark on the expedition along with
+                    adherence, hard work, devotion and insight to get the desired
+                    output.
+                </p>
+            </div>
+        </div>
+        <div class="dec-workflow-container">
+            <h2 class="workflow-heading coves-font">Workflow</h2>
+            <p class="dec-info coves-font para-3">
+                DEC has a total of 25 tasks that the teams would have to perform in
+                their colleges, and online, whatever suits them best. Each task
+                would have some points related to it, and proper submission would
+                make the team eligible for those points. Also, certain tasks would
+                require an on-campus round, and therefore, they must be performed
+                accordingly. Each event will contain a description, the submission
+                pattern, and the point system. At the end, total point would be
+                calculated according to the submissions. Top 8 performing teams
+                would battle it out during the final on campus round during The
+                Entrepreneurship Summit 2020.
+            </p>
+        </div>
+        <div class="dec-workflow-container">
+            <h2 class="workflow-heading coves-font">Guidelines</h2>
+            <p class="dec-info coves-font">
+                Team Size: Minimum - 2 Members, Recommended - 10 to 15 Members
+
+                <p class="dec-info coves-font">1. Participating teams in this track should have a good functional
+                    E-Cell for at least 1 year.</p>
+                <p class="dec-info coves-font">2. The teams who are registering for this , they will have to prove
+                    that they represent the Ecell of their respective college by showing thier social media outreach
+                    .</p>
+                <p class="dec-info coves-font">3. All the tasks will be launched together . To be eligible for the
+                    bonus points you must complete a particular number of tasks as specified. Detailed information
+                    about the Bonus Point tasks will be conveyed further.</p>
+                <p class="dec-info coves-font">4. NOTE:The Entrepreneurship Cell,NSUT DELHI reserves the final right
+                    to place a particular team in a fitting track.</p>
+            </p>
+        </div>
+        <div class="dec-workflow-container">
+            <h2 class="workflow-heading coves-font">Rules</h2>
+            <p class="dec-info coves-font">
+                Team Size: Minimum - 2 Members, Recommended - 10 to 15 Members
+
+                <p class="dec-info coves-font">1. Only one team will be allowed to represent a college in the challenge.
+                </p>
+                <p class="dec-info coves-font">2. In case of multiple entries from the same college, the teams would be
+                    clubbed together in a single team.</p>
+                <p class="dec-info coves-font">3. For selecting a Team Leader from a college, we will connect the
+                    entries before 5th JANUARY (change the date accordingly). After mutual agreement between multiple
+                    teams within 5 days, Team Leader should be decided and an official document with new team members
+                    should be submitted by 11th JANUARY.</p>
+                <p class="dec-info coves-font">4. Before 5thJanuary, i.e. if there are still multiple teams from the
+                    same college, the execution of Preliminary tasks should be done by the teams in collaboration with
+                    each other. They can give the submissions separately although. </p>
+                <p class="dec-info coves-font">5. If multiple submissions(of Preliminary task) even after 11th January
+                    the better performing entry reserves the right to select the team leader and further entries would
+                    be clubbed.
+                </p>
+                <p class="dec-info coves-font">6. New Rule While organizing any session which asks you for photos,
+                    please include one photo showing the
+                    DEC flex . In cases of the sessions organized for Preliminary tasks, you might be asked for a valid
+                    date-proof of the event. Please note that this is just a one-time investment. You can use the same
+                    flex in
+                    all the subsequent events. </p>
+                <p class="dec-info coves-font">7. Semifinalist teams will be selected on the basis of their performance
+                    in preliminary tasks. </p>
+                <p class="dec-info coves-font">8. After you apply for the Advanced track, the decision to let you
+                    continue in Advanced track remains with
+                    E-Cell, NSUT Delhi. The decision made by E-Cell NSUT will be the final and unquestionable. If you
+                    don't
+                    qualify for the Advanced track, you are still eligible to participate in Basic track; provided you
+                    submit
+                    all the necessary documents. </p>
+                <p class="dec-info coves-font">9. Please find attached DEC brochure here. This can be used to show to
+                    your faculty when required.
+                </p>
+                <p class="dec-info coves-font">10. For all live events and sessions, you must go live on any of the
+                    social media pages of your E Cell
+                    (Facebook/Instagram) </p>
+                <p class="dec-info coves-font">11. You can add other team members after registration (you can register
+                    individually) but it is preferable
+                    that you do it as soon as possible.However, you must have at least 3 members in the team prior to
+                    registration deadline. </p>
+                <p class="dec-info coves-font">12. Please Email us the queries on ecellnsut.com , in urgent cases you
+                    can reach us on WhatsApp for any
+                    doubts (a message is preferred over a call).(provide WhatsApp numbers of 2 3rd years) </p>
+
+            </p>
+        </div>
+
+        <div class="tasks-container" style="text-align: center;">
+            <div class="tasks-title-container">
+                <h1 class="tasks-title">
+                    Your <span class="accent-text-stroke">Tasks</span>
+                </h1>
+            </div>
+            <div class="task-card-container" style="text-align: center; align-content: center;">
+                <div class="task-card box-border">
+                    <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">&nbsp; 1</span>
+                    </h3>
+                    <p class="task-brief coves-font">Entrepreneurship facilities by
+                        govt.
+                       
+                    </p>
+                    <br>
+                    <div class="input-group">
+                        <button class="btn know-more"><a style="text-decoration: none; color: inherit;"
+                                href="/users/dashboard/tasks/1">View Details</a></button>
+                    </div>
+                </div>
+                <div class="task-card box-border">
+                    <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">&nbsp;2</span>
+                    </h3>
+                    <p class="task-brief coves-font">
+                        User's feedback.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="input-group">
+                        <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/2"
+                                style="text-decoration: none; color: inherit;">View Details</a></button>
+                    </div>
+                </div>
+                <div class="task-card box-border">
+                    <h3 class="task-card-title coves-font">TASK<span class="accent-color-text task-number">&nbsp;3</span>
+                    </h3>
+                    <p class="task-brief coves-font">Establishing society plan or calendar for the year.</p>
+                    <div class="input-group">
+                        <button type="submit" class="btn know-more"><a href="/users/dashboard/tasks/3"
+                                style="text-decoration: none; color: inherit;">View Details</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-container">
+            <h2 class="timeline-title">Event <span class="accent-text-stroke">Timeline</span></h2>
+        </div>
+        <div class="containe">
+            <div class="timeline">
+                <div class="timeline-month">
+                    January 2020
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        5 January
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="timeline-box">
+
+                                <div class="box-content" style="align-content: center !important;">
+                                    <a class="btn btn-xs btn-default pull-font">Last date to register.</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        7 January
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="timeline-box">
+
+                                <div class="box-content">
+                                    <a class="btn btn-xs btn-default pull-font">Last Day to Complete Task List
+                                        1.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        8 January
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="timeline-box">
+                                <div class="box-content">
+                                    <a class="btn btn-xs btn-default pull-font">Task List 2 release.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        15 January
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="timeline-box">
+                                <div class="box-content">
+                                    <a class="btn btn-xs btn-default pull-font">Leaderboard 1 release.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-month">
+                    February 2020
+                    <span>3 Entries</span>
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        2 February
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="timeline-box">
+                                <div class="box-content">
+                                    <a class="btn btn-xs btn-default pull-font">Last day to complete Task List 2.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-date">
+                        5 February
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="timeline-box">
+                                <div class="box-content">
+                                    <a class="btn btn-xs btn-default pull-font">Leaderboard 2 release.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

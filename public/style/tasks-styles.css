@@ -1,0 +1,107 @@
+.tasks-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #232323;
+  border-radius: 20px;
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+  min-width: 70%;
+}
+
+.task-number {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.task-title {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.description-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.task-info {
+  font-size: 1.1em;
+}
+
+/* .task-details {
+  padding: 2rem;
+} */
+
+.task-count {
+  display: flex;
+}
+
+.submit-button {
+  color: white;
+  background-color: #1762a7;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+
+.submit-button:hover {
+  background-color: #2180d8;
+}
+
+.submit-button:focus {
+  background-color: #2796ff;
+}
+.task-details {
+  margin-top: 1em;
+}
+.task-deadline {
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.task-points {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .tasks-main-section {
+    padding: 2rem 2rem;
+  }
+
+  .task-title {
+    font-size: 1.2rem;
+  }
+  .description-title {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 0;
+  }
+
+  .task-details {
+    margin-top: 1.5em;
+  }
+
+  .task-count {
+    font-size: 1em;
+  }
+  .submit-button {
+    font-size: 0.9em;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}

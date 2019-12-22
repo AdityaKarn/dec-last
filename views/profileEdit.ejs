@@ -1,0 +1,221 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="../public/style/home-styles.css" rel="stylesheet">
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #0e0e11;
+
+    color: white;
+    min-height: 100vh;
+  }
+  .btn {
+    color: white;
+    background-color: #1762a7;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+  }
+  .btn:hover {
+    background-color: #2180d8;
+  }
+
+  .btn:focus {
+    background-color: #2796ff;
+  }
+
+  .card {
+    background-color: #232323;
+    border-radius: 20px;
+  }
+
+  .form-control {
+    outline: none;
+    background: none;
+    border: 1px solid #2e3852;
+    font-size: 1em;
+    padding: 0.5em;
+    color: inherit;
+    border-radius: 5px;
+  }
+</style>
+
+  <div class="container profile-edit" style="padding: 50px;">
+    <div class="row flex-lg-nowrap">
+      <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
+        <div class="card p-3">
+          <div class="e-navlist e-navlist--active-bg">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link px-2 active" href="/users/homeboard"
+                  ><i class="fa fa-fw fa-bar-chart mr-1"></i
+                  ><span style="color: white;">Home</span></a
+                >
+              </li>
+              <li class="nav-item"><a class="nav-link px-2" href="/users/dashboard"><i
+                class="fa fa-fw fa-th mr-1"></i><span style="color: white;">DashBoard</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="row">
+          <div class="col mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="e-profile">
+                  <div class="row">
+                    <div class="col-12 col-sm-auto mb-3">
+                      <div class="mx-auto" style="width: 140px;">
+                        <div
+                          class="d-flex justify-content-center align-items-center rounded"
+                          style="height: 140px; background-color: rgb(233, 236, 239);"
+                        >
+                          <i
+                            class="fa fa-edit"
+                            style="font-size:48px;color:black"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col d-flex flex-column flex-sm-row justify-content-between mb-3"
+                    >
+                      <div class="text-center text-sm-left mb-2 mb-sm-0">
+                        <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">
+                          Profile Edit Section
+                        </h4>
+                        <p class="mb-0">confirm your response!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a href="" class="active nav-link">Settings</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content pt-3">
+                    <div class="tab-pane active">
+                      <form class="form" novalidate="" method="POST">
+                        <div class="row">
+                          <div class="col">
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Leader Name</label>
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    name="name"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Team Name</label>
+                                  <input
+                                  required
+                                    class="form-control"
+                                    type="text"
+                                    name="teamname"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Phone Number</label>
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    name="number"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col mb-3">
+                                <div class="form-group">
+                                  <label>Address</label>
+                                  <input class="form-control" type="text" name="address" required>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6 mb-3">
+                            <div class="mb-2"><b>Change Password? </b><a href="/users/forgotpassword">Click here!</a></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col d-flex justify-content-end">
+                            <button class="btn btn-primary" type="submit">
+                              Save Changes
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="px-xl-3">
+                  <button class="btn btn-block btn-secondary">
+                    <i class="fa fa-sign-out"></i>
+                    <span
+                      ><a href="/users/logout" style="color: white;"
+                        >Logout</a
+                      ></span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title font-weight-bold">Support</h6>
+                <p class="card-text">
+                  Get fast, free help from our friendly assistants.
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <a
+                    style="color: white;"
+                    href="mailto:ecell.care@gmail.com"
+                    target="_blank"
+                    >Contact Us</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

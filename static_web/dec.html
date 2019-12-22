@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152815181-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-152815181-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sommelon - Event And Conference HTML5 Template">
+    <meta name="keywords"
+        content="conference, conference multipurpose, meeting, html template, 2018, onepage, one page, parallax, html5, bootstrap 4">
+    <meta name="author" content="xcodesolution">
+
+    <title>DEC'20 | eCellNSUT</title>
+
+    <!-- Favicon -->
+    <link href="images/logo.png" rel="shortcut icon" type="image/png">
+    <link href="images/logo.png" rel="icon" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome CSS -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- font-awesome-animation.min CSS -->
+    <link href="css/font-awesome-animation.min.css" rel="stylesheet">
+
+    <!-- material-design-iconic-font.min CSS -->
+    <link href="css/material-design-iconic-font.min.css" rel="stylesheet">
+
+    <!-- animate.min CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- animated-text CSS -->
+    <link href="css/animated-text.css" rel="stylesheet">
+
+    <!-- owl CSS -->
+    <link href="css/owl.css" rel="stylesheet">
+
+    <!-- YTPlayer CSS -->
+    <link href="css/jquery.mb.YTPlayer.min.css" rel="stylesheet">
+
+    <!-- zoomslider CSS -->
+    <link href="css/zoomslider.css" rel="stylesheet">
+
+    <!-- jarallax CSS -->
+    <link href="css/jarallax.css" rel="stylesheet">
+
+    <!-- lightbox CSS -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- CArd css -->
+    <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+
+    <!-- Signup css -->
+    <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+    <style>
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2.5px 1px;
+            border-radius: 50%;
+            background: #3B5998;
+            color: white;
+            width: 40px;
+        }
+
+        .fa-envelope {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2.5px 1px;
+            border-radius: 50%;
+
+            width: 40px;
+            background: rgb(248, 66, 66);
+            color: white;
+        }
+
+
+        .fa-linkedin {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2.5px 1px;
+            border-radius: 50%;
+
+            width: 40px;
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2.5px 1px;
+            border-radius: 50%;
+
+            width: 40px;
+
+            background: #007bb5;
+            color: white;
+        }
+
+
+    </style>
+
+    <style>
+        @media screen and (max-width: 1600px) and (min-width: 1367px) {
+            #title {
+                width: 100%;
+                height: 800;
+
+            }
+        }
+    </style>
+
+    <script>
+        function switchVisible() {
+            if (document.getElementById('reg')) {
+
+                if (document.getElementById('form3').style.display == 'none') {
+                    document.getElementById('form3').style.display = 'block';
+                    document.getElementById('form2').style.display = 'none';
+                }
+
+            }
+        }
+
+        function register() {
+            if (document.getElementById('guide')) {
+
+                if (document.getElementById('form1').style.display == 'none') {
+                    document.getElementById('form1').style.display = 'block';
+                    document.getElementById('form3').style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+    <style>
+        #reg {
+            width: 50%;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    </style>
+
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader start -->
+    <div id="preloader"></div>
+
+    
+    <!-- Main Header start -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container" style="margin-top: 3px;">
+                <a class="navbar-brand">
+
+                    <img class="logo-black" src="images/logo-black.png" id="logo2" alt=""
+                        style="width:52px;height:58px; !important">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll active" href="#page-top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#schedules">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#speakers">Our Team</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="dec.html" target="_blank">DEC</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Page title -->
+    <section class="page-title-section over-layer-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 style="font-size: 8vh;">DEC'<span style="color: white;">20</span></h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Details Start -->
+    <section class="blog-area blog-details-area" id="about">
+        <div class="shep-right">
+            <img src="images/shep-right.png" alt="">
+        </div>
+        <div class="shep-left">
+            <img src="images/shep-left.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="blog-content">
+                        <h2>DEC'20</h2>
+                        <p>An entrepreneur's mind is in the perpetual grind to achieve the most innovative yet
+                            simple and creative solution to even the most exhausting issues out there. Each
+                            entrepreneur goes through an arduous journey in order to achieve the resilient
+                            mindset and the acumen required in the real world. <b>The Entrepreneurship Cell,
+                                NSUT</b> aims to promote this very notion by preparing budding entrepreneurs and giving
+                            them a head start through our annual affair, popularly known as <b>DEC- Delhi
+                                Entrepreneurship Challenge.</b></p>
+                        <div class="highlight-text">
+                            <p>DEC, the brainchild of ECell NSUT, offers the ground for likeminded enthusiasts
+                                to indulge in regular skill enhancing activities including group discussions,
+                                case studies, etc. to elucidate the dislimn of horrors of commencing something
+                                different and ingenious. We believe that entrepreneurship isn't convoluted,
+                                the only stipulation is to embark on the expedition along with adherence,
+                                hard work, devotion and insight to get the desired output.
+
+                            </p>
+                        </div>
+                        <p>DEC has a total of 25 tasks that the teams would have to perform in their colleges,
+                            and online, whatever suits them best. Each task would have some points related to it,
+                            and proper submission would make the team eligible for those points. Also, certain
+                            tasks would require an on-campus round, and therefore, they must be performed
+                            accordingly. Each event will contain a description, the submission pattern,
+                            and the point system. At the end, total point would be calculated according to
+                            the submissions. Top 8 performing teams would battle it out during the final on
+                            campus round during The Entrepreneurship Summit 2019.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blog-area guideline-details-area" id="form3">
+
+        <div class="container">
+            <button  id="Guideline-btn" class="button" style="vertical-align:middle; transform: translate(550px);" >
+                <span>Guidelines</span> </button>
+            <a  class="button" style="vertical-align:middle; color: white;transform: translate(100px);" id="Rules-btn">
+                    <span>Rules</span> </a>
+
+            <div class="row">
+                <div class="col-md-12"></div>
+                    <div class="blog-content" id = "rules-para">
+                        
+                        <p style="text-align: center;" >
+                            
+                            <br> 1.Only one team will be allowed to represent a college in the challenge.<br><br>
+                                2.In case of multiple entries from the same college, the teams would be clubbed together in a single team.<br><br>
+                                3.For selecting a Team Leader from a college, we will connect  the entries before 5th JANUARY (change the date accordingly).After mutual agreement between multiple teams within 5 days, Team Leader should be decided and an official document with new team members should be submitted by 11th JANUARY.<br><br>
+                                4.Before 5thJanuary, i.e. if there are still multiple teams from the same college, the execution of Preliminary tasks should be done by the teams in collaboration with each other.They can give the submissions separately although.<br><br>
+                                5.If multiple submissions(of Preliminary task) even after 11th January the better performing entry reserves the right to select the team leader and further entries would be clubbed.<br><br>
+                                6.New Rule  While organizing any session which asks you for photos, please include one photo showing the DEC flex . In cases of the sessions organized for Preliminary tasks, you might be asked for a valid date-proof of the event. Please note that this is just a one-time investment. You can use the same flex in all the subsequent events.<br><br>
+                                7. Semifinalist teams will be selected on the basis of their performance in preliminary tasks.<br><br>
+                                8.After you apply for the Advanced track, the decision to let you continue in Advanced track remains with E-Cell, NSUT Delhi. The decision made by E-Cell NSUT will be the final and unquestionable. If you don't qualify for the Advanced track, you are still eligible to participate in Basic track; provided you submit all the necessary documents.<br><br>
+                                9.Please find attached DEC brochure  here. This can be used to show to your faculty when required.<br><br>
+                                10.For all live events and sessions, you must go live on any of the social media pages of your E Cell (Facebook/Instagram)<br><br>
+                                11.You can add other team members after registration (you can register individually) but it is preferable that you do it as soon as possible.However, you must have at least 3 members in the team prior to registration deadline.<br><br>
+                                12.Please Email us the queries on ecellnsut.com , in urgent cases you can reach us on WhatsApp for any doubts (a message is preferred over a call).(provide WhatsApp numbers of 2 3rd years)<br><br>
+                </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <div class="blog-content" id = "guideline-para" style="display:none;">
+                        <h2>DEC'20 Guidelines</h2>
+
+                            <p>
+                               <p> Team Size: Minimum - 2 Members, Recommended - 10 to 15 Members</p>
+                                <br>
+                                <p>
+                                    1. Participating teams in thish track should have a good
+                                    functional
+                                    E-Cell for at least 1 year.</p>
+                                    <br>
+                                <p>2. The teams who are registering for this , they will
+                                    have to prove
+                                    that they represent the Ecell of their respective college by showing thier social
+                                    media outreach
+                                    .</p>
+                                    <br>
+                                <p>3. All the tasks will be launched together . To be
+                                    eligible for the
+                                    bonus points you must complete a particular number of tasks as specified. Detailed
+                                    information
+                                    about the Bonus Point tasks will be conveyed further.</p>
+                                    <br>
+                                <p>4. NOTE:The Entrepreneurship Cell,NSUT DELHI reserves the
+                                    final right
+                                    to place a particular team in a fitting track.</p>
+                            
+                            <p><b>By clicking, I hereby agree to all the guidelines. </b></p>
+                            
+                                <button id="guide" class="btn btn-default btn-style btn-color"
+                                    style="font-size:16px  !important; margin: 20px;" value="Click" onclick="register();">Submit</button>
+                                   <p> and continue to registration form!!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Start -->
+    <section style="padding-top: 50px; padding-bottom: 100px; background: url(images/bg/5.jpg); " id="form2">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>For DEC'20</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <button class="button" style="vertical-align:middle" id="reg" value="Click" onclick="switchVisible();">
+                    <span>Register</span> </button>
+                <a href="/users/login" class="button" style="vertical-align:middle; color: white;" id="reg">
+                    <span>Login</span> </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <iframe id="form1" src="./form/index.html" style="width: 100%; display: none; height: 1250px;"></iframe>
+
+
+
+    <!-- Form end -->
+
+    <!-- Contact start -->
+    <section class="contact-area" id="contact">
+        <div class="shep-right">
+            <img src="images/shep-right.png" alt="">
+        </div>
+        <div class="shep-left">
+            <img src="images/shep-left.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Get in <span>touch</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-box wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="info-box">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Netaji Subhas University Of Technology, Dwarka Sector-3, Dwarka
+                            <div class="box-bdr"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-box wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="info-box">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>Karan Jain: &nbsp; 7042049400</p>
+                            <p>Amartya Palash: 9971276422 </p>
+                            <br>
+                            <div class="box-bdr"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-box wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="info-box">
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            <p>ecell.care@gmail.com</p>
+                            <br><br>
+                            <div class="box-bdr"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="col-default text-center">
+                        <div id="form-messages"></div>
+                        <form class="gform pure-form pure-form-stacked" method="POST"
+                            action="https://script.google.com/macros/s/AKfycby2TIXSw1dlkERojWmAr6aiOrvAlsT-H8lqlky6jYSi2cwaRhdQ/exec">
+                            <div class="form-row form-elements1">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" style="font-size:16px  !important;"
+                                        id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" style="font-size:16px  !important;"
+                                        id="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" style="font-size:16px  !important;"
+                                        id="subject" name="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" style="font-size:16px  !important;"
+                                        id="numbar" name="phone" placeholder="Phone" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea class="form-control textarea-hight-full"
+                                        style="font-size:16px  !important;" id="message" name="message" rows="3"
+                                        placeholder="Message" required></textarea>
+                                </div>
+                                <div class="col-md-12 text-left center991">
+                                    <button class="btn btn-default btn-style btn-color"
+                                        style="font-size:16px  !important;" type="submit">Send Message</button>
+                                </div>
+                            </div>
+
+
+                            <!-- Customise the Thankyou Message People See when they submit the form: -->
+                            <div class="thankyou_message" style="display:none;margin-top: 25%;">
+                                <h2><em>Thanks</em> for contacting us!<br>
+                                    We will get back to you soon!</h2>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="col-default map-col">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28020.647773040255!2d77.034732!3d28.612345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x108adaa3abe4bd07!2sNetaji+Subhas+University+Of+Technology!5e0!3m2!1sen!2sus!4v1550261676726"
+                            frameborder="0" style="border:0; width:100%; height:350px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter start -->
+    <footer class="footer-area over-layer-white" style="padding: 0; margin: 0; ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="footer-col">
+                        <ul style="margin-bottom: 2vh; margin-top:2vh;">
+                            <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0s"><a target="_blank"
+                                    href="https://www.facebook.com/ecell.nsut/" class="fa fa-facebook"></a></li>
+
+                            <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.4s"><a target="_blank"
+                                    href="https://www.instagram.com/ecell.nsut/?hl=en" class="fa fa-instagram"></a></li>
+
+                            <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.8s"><a target="_blank"
+                                    href="https://in.linkedin.com/company/ecell-nsit-the-entrepreneurship-cell-of-nsit-"
+                                    class="fa fa-linkedin"></a></li>
+                            <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.8s"><a target="_blank"
+                                    href="mailto:ecell.care@gmail.com" class="fa fa-envelope"></a></li>
+
+                        </ul>
+                        <div class="copyright">
+
+                            <p style="font-size: small; padding: 0; margin: 0;">Copyright © 2019 <span
+                                    style='color:#E59500;'>eCell NSUT</span>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/show.js"></script>
+
+    <!-- popper.min -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- All Included JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/animated-text.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/dyscrollup.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/jquery.zoomslider.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/main.js"></script>
+
+    <!-- AJAX Contact Form Using -->
+    <script src="js/app.js"></script>
+
+    <script data-cfasync="false" src="js/form-submission-handler.js"></script>
+    
+    <script>
+        document.getElementById('Rules-btn').addEventListener('click', function(){
+            document.getElementById("rules-para").style.display = 'block';
+            document.getElementById("guideline-para").style.display = 'none';
+        })
+        document.getElementById('Guideline-btn').addEventListener('click', function(){
+            document.getElementById("rules-para").style.display = 'none';
+            document.getElementById("guideline-para").style.display = 'block';
+        })
+        
+    </script>
+</body>
+
+
+</html>

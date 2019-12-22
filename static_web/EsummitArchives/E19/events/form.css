@@ -1,0 +1,58 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {
+	flex: 1 0 auto;
+}
+.success-fail-msg {
+	min-height: 30vh;
+	padding: 10vh;
+}
+
+.header {
+	margin-bottom: 30px;
+}
+.red-band {
+	width: 100vw;
+	height: 1vw;
+}
+#qic {
+	padding: 20px 10px;
+	margin: auto auto;
+}
+.partners {
+	text-align: center;
+	margin: 15px;
+}
+.partners img {
+	width: 20vw;
+}
+main {
+	margin: 30px 0px;
+}
+.card-title {
+	width: 100%;
+
+	background-image: url('http://stoneshot.com/e/qic/28569/form/img/slider-gradient.png');
+	background-position: bottom;
+}
+.card-action a {
+	text-transform: none!important;
+	
+}
+.card .card-content {
+	padding: 15px 24px 10px 24px;
+}
+button {
+	background-color: #ed2025;
+}
+.input-field .prefix.active {
+	color: #000000;
+}
+
+
+
+
+
